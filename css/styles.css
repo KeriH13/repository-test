@@ -1,3 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reszta kodu */
+
+
+
 body {
-    background-color: aquamarine;
+  background-color: #2a2a2a;
+  color: teal;
+  
+    font-display: swap; /* WAZNE! prfędkość ładownania strony*/
+
+}
+code {
+  background-color: grey;
+  color: khaki;
+}
+figure {
+  margin-left: auto;
+}
+h1 {
+    color:yellow;
+    font-display: swap;
+    font-family: 'Bebas Neue', cursive;
+      text-decoration: underline overline;
+}
+
+.color-s {
+  color: crimson;
+}
+.color-s:hover .color-s:focus {
+  color: violet;
+}
+
+
+
+.lorem-wrap {
+    box-sizing: border-box;
+  text-align: justify;
+  letter-spacing: 1px;
+  /* word-spacing: 15px; */ /* rzadko uzywane */
+  width: 50%;
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 4px 4px 3px darkgoldenrod;
+
+  /*white-space: pre-wrap; *//* kazda następna linia NAPISANA W HTML */
+
+  border:1px solid rgba(194, 242, 221, 0.3);
+  padding: 15px;
+
+  margin:20px;
+}
+
+
+/*-----BOX-SIZING----*/
+/*.lorem-wrap-two {
+    box-sizing: content-box;
+        width: 200px;
+}*/
+.lorem-wrap::first-letter {
+    font-size: 24px;
+    color: #f00;
+    text-shadow: -4px -4px 3px #f00;
+    font-family: cursive;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.lorem-wrap::selection {
+    background-color: darkorange;
+    color: darkviolet;
+}
+.post {
+  color: #00ff00;
+  font-size: 20px;
+}
+.post-link {
+  color: inherit;
+  font-size: 22px;
+}
+.post-link:hover, .post-link:focus {
+    color: darkgreen;
+}
+.site-nav {
+  list-style: none;
+  text-transform: uppercase;
+  /* padding-left: 0; */
+}
+.link {
+  text-decoration: none;
+  color: red;
+}
+.link-two {
+  color: #fff;
+}
+.link:hover,
+.link:focus {
+  color: yellow;
+}
+.link:visited {
+  background-color: #0f0;
+}
+.link:active {
+  color: rgb(236, 12, 143);
 }
