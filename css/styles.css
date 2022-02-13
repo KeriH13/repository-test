@@ -208,7 +208,11 @@ h1.post-heading {
 }
 
 
+
+
+
 /* TEST FORM ---------------------------- */
+/*
 .form-group {
   display: flex;
   flex-direction: column;
@@ -228,7 +232,15 @@ h1.post-heading {
 label {
   padding-left: 10px;
 }
+*/
+
+
+
+
+
+
 /* section FORM ======================== */
+/*
 body {
   font-family: sans-serif;
   line-height: 1.5;
@@ -287,7 +299,13 @@ button:focus {
 .form-input {
   margin-bottom: 5px; /* centered with text */
 }
+*/
+
+
+
+
 /* in-range / out-of-range */
+/*
 * {
   box-sizing: border-box;
 }
@@ -340,4 +358,81 @@ button:focus {
 .form-input:in-range {
   border-color: green;
 }
+*/
 
+
+
+
+
+
+
+
+/* FORM  -  NECCESARRY CODE  !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.label-text {
+  margin-bottom: 4px;
+}
+
+.form-input {
+  padding: 8px;
+  border: 1px solid #2a2a2a;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  display: flex;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: inherit;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+button:hover,
+button:focus {
+  background-color: #1976d2;
+}
+/* .form-input:required {
+  border-color: red;
+} */
+
+/* .form-input:valid {
+  border-color: green;
+}
+.form-input:invalid {
+  border-color: red;
+} */
+
+.form-input:not(:placeholder-shown):required:valid {
+  border-color: green;
+}
+
+.form-input:not(:placeholder-shown):required:invalid {
+  border-color: red;
+}
+.form {
+  background-color: #fff;
+  border-radius: 4px;
+  width: 50vw;
+}
